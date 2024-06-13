@@ -1,0 +1,56 @@
+body {
+    background-color: #fff;
+    color: #212529;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    text-align: left;
+}
+
+.header {
+    color: #fff;
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 5px;
+    font-size: 25px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Instagram */
+.fa-instagram {
+    background: #E1306C;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+/* GitHub */
+.fa-github {
+    background: #333333;
+    color: white;
+}
+
+/* Reddit */
+.fa-reddit {
+    background: #FF5700;
+    color: white;
+}

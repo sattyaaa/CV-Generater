@@ -1,0 +1,223 @@
+<!DOCTYPE html> <!-- Adding the document type declaration -->
+
+<html lang="en">
+
+<head>
+    <!-- External CSS and fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="static/styles.css" rel="stylesheet">
+    <!-- Title of the page -->
+    <title>CV Builder</title>
+    <!-- Internal CSS -->
+    <style>
+        .sub-label {
+            font-size: 0.875rem;
+            /* Slightly smaller than the main label */
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header bg-secondary">
+        <h1>CV Builder</h1>
+    </div>
+
+    <!-- Main content container -->
+    <div class="container-lg">
+        <div class="text-center">
+            <h2>Fill Out the Form</h2>
+        </div>
+
+        <!-- Form -->
+        <div class="row justify-content-center my-5">
+            <div class="col-lg-8">
+                <form id="cvForm" method="post" action="/">
+
+                    <!-- Name field -->
+                    <label for="name" class="form-label">Name:</label>
+                    <div class="mb-4 input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-person text-secondary"></i>
+                        </span>
+                        <input type="text" id="name" class="form-control" placeholder="e.g. Mario" name="name" />
+                    </div>
+
+                    <!-- Job title field -->
+                    <label for="title" class="form-label">Job Title:</label>
+                    <div class="mb-4 input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-person-lines-fill"></i>
+                        </span>
+                        <input type="text" id="title" class="form-control" placeholder="e.g. Software Developer" name="title" />
+                    </div>
+
+                    <!-- Email field -->
+                    <label for="email" class="form-label">Email address:</label>
+                    <div class="input-group mb-4">
+                        <span class="input-group-text">
+                            <i class="bi bi-envelope text-secondary"></i>
+                        </span>
+                        <input type="email" id="email" class="form-control" placeholder="e.g. mario@example.com" name="email" />
+                    </div>
+
+                    <!-- Phone field -->
+                    <label for="phone" class="form-label">Phone:</label>
+                    <div class="mb-4 input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-telephone"></i>
+                        </span>
+                        <input type="tel" id="phone" class="form-control" placeholder="e.g. +91 XXXXXXXXXX" name="phone" />
+                    </div>
+
+                    <!-- Address field -->
+                    <label for="address" class="form-label">Address:</label>
+                    <div class="mb-4 input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-house"></i>
+                        </span>
+                        <textarea id="address" class="form-control" rows="1" placeholder="e.g. MIG 4 Awadhpuri, Kanpur, Uttar Pradesh" name="address"></textarea>
+                    </div>
+
+                    <!-- About Yourself field -->
+                    <label for="para" class="form-label">About Yourself:</label>
+                    <div class="mb-4 input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-person-check"></i>
+                        </span>
+                        <textarea class="form-control" id="para" rows="3" placeholder="Describe yourself in about 40 words." name="about"></textarea>
+                    </div>
+
+                    <!-- Skills field -->
+                    <label for="skills" class="form-label">Skills:</label>
+                    <div class="mb-4 input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-card-checklist"></i>
+                        </span>
+                        <textarea class="form-control" id="skills" rows="3" placeholder="e.g. Leadership, Python, Java, Web ..." name="skills"></textarea>
+                    </div>
+
+                    <!-- Education/Certifications section -->
+                    <label for="education1" class="form-label">Education/Certifications:</label>
+                    <div id="educationContainer">
+                        <div class="education-block mb-4">
+                            <!-- College field -->
+                            <label for="college1" class="form-label sub-label">College:</label>
+                            <div class="mb-2 input-group">
+                                <span class="input-group-text">
+                                    <i class="bi bi-building"></i>
+                                </span>
+                                <input type="text" class="form-control" id="college1" name="college1" placeholder="e.g. AITH Kanpur, UP, India" />
+                            </div>
+
+                            <!-- Degree field -->
+                            <label for="degree1" class="form-label sub-label">Degree:</label>
+                            <div class="mb-2 input-group">
+                                <span class="input-group-text">
+                                    <i class="bi bi-book"></i>
+                                </span>
+                                <input type="text" class="form-control" id="degree1" name="degree1" placeholder="e.g. B.Tech in CS(AI/ML) GPA(7.5)" />
+                            </div>
+
+                            <!-- Completion Date field -->
+                            <label for="date1" class="form-label sub-label">Completion Date:</label>
+                            <div class="mb-2 input-group">
+                                <span class="input-group-text">
+                                    <i class="bi bi-calendar"></i>
+                                </span>
+                                <input type="text" class="form-control" id="date1" name="date1" placeholder="e.g. Expected 2027" />
+                            </div>
+
+                            <!-- Education Description field -->
+                            <label for="educationDescription1" class="form-label sub-label">Description:</label>
+                            <div class="mb-2 input-group">
+                                <span class="input-group-text">
+                                    <i class="bi bi-file-earmark-text"></i>
+                                </span>
+                                <textarea class="form-control" id="educationDescription1" name="educationDescription1" rows="3" placeholder="Describe your achievements"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add Education button -->
+                    <div class="mb-4 text-center">
+                        <button type="button" class="btn btn-secondary" id="addEducationBtn">Add Education</button>
+                    </div>
+
+                    <!-- Work Experience section -->
+                    <label for="work1" class="form-label">Work Experience:</label>
+                    <div id="workContainer">
+                        <div class="work-block mb-4">
+                            <!-- Organization/Project field -->
+                            <label for="organization1" class="form-label sub-label">Organization/Project:</label>
+                            <div class="mb-2 input-group">
+                                <span class="input-group-text">
+                                    <i class="bi bi-building"></i>
+                                </span>
+                                <input type="text" class="form-control" id="organization1" name="organization1" placeholder="e.g. ABC Corp, Personal Project (2018-Present)" />
+                            </div>
+
+                            <!-- Position field -->
+                            <label for="job1" class="form-label sub-label">Position:</label>
+                            <div class="mb-2 input-group">
+                                <span class="input-group-text">
+                                    <i class="bi bi-book"></i>
+                                </span>
+                                <input type="text" class="form-control" id="job1" name="job1" placeholder="e.g. Software Analyst or Volunteer" />
+                            </div>
+
+                            <!-- Date field -->
+                            <label for="workDate1" class="form-label sub-label">Date:</label>
+                            <div class="mb-2 input-group">
+                                <span class="input-group-text">
+                                    <i class="bi bi-building"></i>
+                                </span>
+                                <input type="text" class="form-control" id="workDate1" name="workDate1" placeholder="e.g. 2018-Present" />
+                            </div>
+
+                            <!-- Description field -->
+                            <label for="description1" class="form-label sub-label">Description:</label>
+                            <div class="mb-2 input-group">
+                                <span class="input-group-text">
+                                    <i class="bi bi-file-earmark-text"></i>
+                                </span>
+                                <textarea class="form-control" id="description1" name="description1" rows="3" placeholder="Describe your role and achievements"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add Work Experience button -->
+                    <div class="mb-4 text-center">
+                        <button type="button" class="btn btn-secondary" id="addWorkBtn">Add Work Experience</button>
+                    </div>
+
+                    <!-- Submit button -->
+                    <div class="mb-4 text-center">
+                        <button type="submit" class="btn btn-primary">Generate CV</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer of the page -->
+    <footer class="bg-secondary h6 m-0 text-white text-center py-2">
+        <a href="https://x.com/satyaaa_m" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/satyaaa_m/" class="fa fa-instagram"></a>
+        <a href="https://github.com/sattyaaa" class="fa fa-github"></a>
+        <a href="https://www.reddit.com/user/gynmad/" class="fa fa-reddit"></a>
+        <hr>
+        <p>&copy; 2024 CV Builder. All rights reserved.</p>
+        <p>Author: Satyam</p>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="static/scripts.js"></script>
+</body>
+
+</html>
