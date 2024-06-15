@@ -28,6 +28,8 @@ To deploy this project run
 
 
 # Demo
+### [YouTube Video](https://youtu.be/sShejxeDbRI?si=21i-R1E5fmnNVyaf)
+
 ## Preview of submission form
 ![Screenshot of the submission form](static/Preview.png)
 
